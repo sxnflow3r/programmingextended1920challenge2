@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+  padding-left:2%;
+  padding-right: 2%;
+}
+
+body{
+	font-family:'Anonymous Pro', monospace;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+
+.timeImage{
+	background-image: url("https://steamcdn-a.akamaihd.net/steam/apps/801650/ss_af486fb2203971c7e6ce5a35b2c358d17d4fbfdb.1920x1080.jpg?t=1589895275");
+	  background-color: #cccccc;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+  text-align: center;
+}
+.timeImage.changeImage{
+  transition-duration: 2s;
+  transition-timing-function: ease-out;
+  background-image: url('https://i.pinimg.com/originals/52/96/7e/52967e9aee1c617cb0668d3ef1704eba.jpg'); 
+  /*(#00321E*/
+}
+
+#earthsClock.changeColor{
+  background-color: rgba(0,0,0,0.5);
+}
+
+#marsClock.changeColor{
+  background-color: rgba(0,0,0,0.5);
+}
+
+h2{
+  font-family: 'Bebas Neue',cursive;
+  font-size: 80px;
+}
+.container {
+  width: 550px;
+  height:225px;
+  margin: 20px auto ;
+  border: 20px solid #e1e1e1;
+  background-color: rgba(0,0,0,0.7);
+  overflow: hidden;
+  text-align: center;
+  border-radius: 40px;
+}
+.container.changeColor{
+  transition-duration: 3s;
+  transition-timing-function: ease-out;
+  background-color: rgba(255,143,0,0.7);
+}
+button{
+  width:100px;
+  height: 50px;
+  border:5px solid;
+  border-radius: 20px;
+  font-family:'Anonymous Pro', monospace;
+  font-size: 20px
+}
+
+.fourSeasonGrid{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding:30px;
+}
+
+.season:hover{
+  position: relative;
+   top: 0px;
+   animation: 500ms hover infinite alternate ease-in-out;
+}
+
+@keyframes hover {
+  0% { 
+    top: 10px; 
+  }
+  100% { 
+    top: 20px;
+  }
+}
