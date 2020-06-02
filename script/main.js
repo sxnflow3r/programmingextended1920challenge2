@@ -46,10 +46,6 @@ initEarthClock();
  * Start clock
  */
 
- //time is based off of June 2 GMT at Midnight.
-
-
-
 function initMarsClock() {
 	var clock = document.getElementById('timeText');
 	var etime  = getCurrentMarsTime(new Date());
